@@ -1,5 +1,5 @@
 import React, {useState , useEffect} from "react"
-import axios from "axios"
+
 import PetList from "../components/PetList"
 import {Link} from "@reach/router"
 

@@ -7,7 +7,7 @@ export default (props)=> {
     const [loaded , setLoaded] = useState(false)
 
     useEffect(()=>{
-        axios.get("http://localhost:8000/pets")
+        axios.get("http://localhost:8000/api/pets")
         .then(pets=> { 
             setPets(pets.data)
             setLoaded(true)

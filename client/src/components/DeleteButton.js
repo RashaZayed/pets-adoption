@@ -5,7 +5,7 @@ export default(props) => {
     const {petId , onSuccess ,petName} = props;
     const onClickHandler = e => {
         e.preventDefault();
-        axios.delete("http://localhost:8000/pets/"+ petId)
+        axios.delete("http://localhost:8000/api/pets/"+ petId)
         .then(pet => {
         onSuccess()
     })

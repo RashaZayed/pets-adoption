@@ -13,7 +13,7 @@ export default(props)=> {
     const[thirdSkill , setThirdSkill] = useState("");
     
 useEffect(()=>{
-    axios.get("http://localhost:8000/pets/"+ id)
+    axios.get("http://localhost:8000/api/pets/"+ id)
     .then(res =>{
         setName(res.data.name)
         setType(res.data.type)

@@ -11,7 +11,7 @@ export default (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/pets/" + id)
+      .get("http://localhost:8000/api/pets/" + id)
       .then((res) => {
         setPets(res.data);
         setLoad(true)
@@ -20,7 +20,7 @@ export default (props) => {
   }, [id]);
 
   const updatePet = ({name , type , description , firstSkill , secSkill , thirdSkill}) => {
-      axios.put("http://localhost:8000/pets/"+ id , {name , type , description , firstSkill , secSkill , thirdSkill} )
+      axios.put("http://localhost:8000/api/pets/"+ id , {name , type , description , firstSkill , secSkill , thirdSkill} )
       .then(res=> {
           console.log(res)
           navigate("/")

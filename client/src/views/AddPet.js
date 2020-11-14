@@ -15,7 +15,7 @@ export default (props) => {
     thirdSkill,
   }) => {
     axios
-      .post("http://localhost:8000/pets/new", {
+      .post("http://localhost:8000/api/pets/new", {
         name,
         type,
         description,
