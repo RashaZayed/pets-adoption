@@ -1,0 +1,19 @@
+.container {
+  margin: 40px;
+
+  
+}
+h1 {
+  color: #2268a8;
+  font-style: oblique;
+  
+}
+button {
+  margin: 10px;
+}
+.homeLink {
+  position: relative;
+ left: 500px;
+ top: 33px;
+
+}
